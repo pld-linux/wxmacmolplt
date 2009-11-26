@@ -1,0 +1,18 @@
+--- wxmacmolplt-7.4/resources/wxmacmolplt.desktop~	2008-02-26 15:02:08.000000000 +0000
++++ wxmacmolplt-7.4/resources/wxmacmolplt.desktop	2009-11-26 14:40:09.331090651 +0000
+@@ -1,11 +1,12 @@
+ [Desktop Entry]
+-Version=0.9.4
+-Encoding=UTF-8
+ Name=wxMacMolPlt
+ GenericName=Molecular modelling program
++GenericName[pl]=Program do modelowania molekularnego
+ Comment=Visualizes models of molecules
++Comment[pl]=Wizualizacja modelów molekularnych
+ Exec=wxmacmolplt
+ Icon=wxmacmolplt
+ Terminal=false
+ Type=Application
+-Categories=Science;Chemistry;GTK;
++Categories=Education;Science;Chemistry;
++# vi: encoding=utf-8
