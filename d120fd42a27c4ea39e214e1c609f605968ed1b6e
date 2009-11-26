@@ -1,0 +1,2 @@
+- updated to 7.4
+- kill redundant BR: wxGTK2-unicode-devel
