@@ -1,12 +1,12 @@
 Summary:	Program for plotting 3-D molecular structures
 Summary(pl.UTF-8):	Program do wykreślania trójwymiarowych struktur molekularnych
 Name:		wxmacmolplt
-Version:	7.4.1
+Version:	7.4.2
 Release:	1
 License:	GPL v2+
 Group:		Applications
 Source0:	http://www.scl.ameslab.gov/~brett/MacMolPlt/download/%{name}-%{version}.tar.gz
-# Source0-md5:	ea8d64ee3572ca22f87f12bbc3d1ea47
+# Source0-md5:	493d96d7bc9fe0e82feeade75bb30fd1
 Patch0:		%{name}-desktop.patch
 URL:		http://www.scl.ameslab.gov/~brett/MacMolPlt/
 BuildRequires:	OpenGL-GLU-devel
@@ -33,7 +33,7 @@ molekularnych oraz drgań swobodnych (wibracji).
 %{__autoconf}
 %{__automake}
 %configure \
-	--with-wx-config="wx-gtk2-unicode-config"
+	--with-wx-config=wx-gtk2-unicode-config
 %{__make}
 
 %install
@@ -44,8 +44,8 @@ install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install resources/wxmacmolplt.desktop $RPM_BUILD_ROOT%{_desktopdir}
-install resources/wxmacmolplt.png $RPM_BUILD_ROOT%{_pixmapsdir}
+cp -a resources/wxmacmolplt.desktop $RPM_BUILD_ROOT%{_desktopdir}
+cp -a resources/wxmacmolplt.png $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
