@@ -2,7 +2,7 @@ Summary:	Program for plotting 3-D molecular structures
 Summary(pl.UTF-8):	Program do wykreślania trójwymiarowych struktur molekularnych
 Name:		wxmacmolplt
 Version:	7.7.2
-Release:	4
+Release:	5
 License:	GPL v2+
 Group:		Applications
 Source0:	https://github.com/brettbode/wxmacmolplt/archive/v%{version}/%{name}-%{version}.tar.gz
